@@ -51,6 +51,14 @@ body {
     vertical-align: baseline;
   }
 
+  &__card-balance--visible {
+    color: #fff;
+  }
+
+  &__card-balance--invisible {
+    display: none;
+  }
+
   &__grid-img {
     top: 10px;
   }
@@ -68,16 +76,31 @@ body {
     margin: 35px auto;
   }
 
-  &__modal-btn {
-    display: inline-flex;
-    width: 49.3%;
-    border: 1px solid rgb(197, 193, 193);
-    box-sizing: border-box;
+  &__modal-btns {
+    border-top: 1px solid rgb(197, 193, 193);
+    width: 100%;
     color: rgb(59, 59, 248);
     padding: 18px;
   }
 
-  &__modal-btn svg {
+  &__modal-btn-left {
+    display: inline-flex;
+    width: 49.3%;
+    border-right: 1px solid rgb(197, 193, 193);
+  }
+
+  &__modal-btn-right {
+    display: inline-flex;
+    width: 49.3%;
+  }
+
+  &__modal-btn-left > p,
+  &__modal-btn-right > p {
+    margin: 35px auto;
+  }
+
+  &__modal-btn-left > svg,
+  &__modal-btn-right > svg {
     display: none;
   }
 

@@ -52,8 +52,11 @@
             <p class="uk-margin-remove uk-text-small uk-text-uppercase uk-text-left">
                 общая сумма на карте
             </p>
-            <span class="header__card-title uk-text-left uk-margin-remove uk-text-bold uk-text-large">
+            <span class="header__card-balance--visible uk-text-left uk-margin-remove uk-text-bold uk-text-large">
                 1805,91 &#8376 
+            </span>
+            <span class="header__card-balance--invisible uk-text-bold uk-text-large">
+                &#128584;&#128585;&#128586;
             </span>
             <img class="header__card-add uk-display-inline" src="./src/img/add.svg" width="20" 
             height="auto" alt="add" href="#modal-center" uk-toggle uk-img>
@@ -70,12 +73,14 @@
                         Чтобы обратно показать баланс проведите рукой над экраном на вкладке "Мой банк"
                     </p>
 
-                    <button class="header__modal-btn" type="button" uk-close>
-                        <p>Отмена</p>
-                    </button>
-                    <button class="header__modal-btn" type="button" uk-close>
-                        <p>Скрыть</p>
-                    </button>
+                    <div class="header__modal-btns uk-card">
+                        <button class="header__modal-btn-left" type="button" uk-close id="close-modal">
+                            <p>Отмена</p>
+                        </button>
+                        <button class="header__modal-btn-right" type="button" uk-close id="hide-balance">
+                            <p>Скрыть</p>
+                        </button>
+                    </div>
                 </div>
             </div>
 
@@ -88,7 +93,7 @@
         </ul>
 
     </header>
-
+    
     <main class="main uk-position-relative">
         
 
@@ -225,9 +230,6 @@
         </ul>
     </main>
     
-
-    
-
     <script src="dist/js/app.js"></script>
 </body>
 </html>
