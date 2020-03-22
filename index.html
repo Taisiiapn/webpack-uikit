@@ -32,202 +32,101 @@
 </head>
 <body>
 
-    <header class="header uk-container uk-padding-remove">
-        <a class="header__qrCode" href="#">
-            <img src="./src/img/qr-code.svg" alt="qr qr-code">
-        </a>
-        <h1 class="header__title">Мой банк</h1>
-        <div class="header__card uk-position-relative">
-            <img class="uk-position-absolute uk-position-medium uk-position-top-right" 
-            src="./src/img/mastercard-logo.svg" width="15" height="auto" alt="mastercard logo" uk-img>
-            <p class="header__card-title uk-text-left uk-margin-remove uk-text-bold">
-                Black Edition
-            </p>
-            <p class="uk-margin-remove-top uk-text-small uk-text-uppercase uk-text-left uk-margin-large-bottom">
-                xxx 5051 01/22
-            </p>
-            <p class="header__card-subTitle uk-text-large uk-position-absolute uk-position-medium uk-position-center-right uk-text-bold">
-                black edition
-            </p>
-            <p class="uk-margin-remove uk-text-small uk-text-uppercase uk-text-left">
-                общая сумма на карте
-            </p>
-            <span class="header__card-balance--visible uk-text-left uk-margin-remove uk-text-bold uk-text-large">
-                1805,91 &#8376 
-            </span>
-            <span class="header__card-balance--invisible uk-text-bold uk-text-large">
-                &#128584;&#128585;&#128586;
-            </span>
-            <img class="header__card-add uk-display-inline" src="./src/img/add.svg" width="20" 
-            height="auto" alt="add" href="#modal-center" uk-toggle uk-img>
+    <header class="header uk-container">
+        
+        <span class="uk-text-left"><b>&lt;</b> Назад</span>
+        <span class="header__title uk-text-center uk-text-bold">О карте</span>
+        <p class="header__subtitle uk-text-center uk-text-uppercase uk-text-muted">общая сумма на карте</p>
+        <p class="header__balance uk-text-large uk-text-center uk-text-uppercase">1805,91 &#8376;</p>
 
-            <div id="modal-center" class="uk-flex-top" uk-modal>
-                <div class="header__modal uk-modal-dialog uk-margin-auto-vertical">
-                    <img class="header__modal-img" src="./src/img/business-cat.jpg" 
-                    width="70%" height="auto" alt="mastercard logo" uk-img>
-
-                    <p class="uk-text-center uk-text-secondary uk-text-bold uk-text-small">
-                        Скрыть баланс?
-                    </p>
-                    <p class="uk-text-center uk-text-secondary">
-                        Чтобы обратно показать баланс проведите рукой над экраном на вкладке "Мой банк"
-                    </p>
-
-                    <div class="header__modal-btns uk-card">
-                        <button class="header__modal-btn-left" type="button" uk-close id="close-modal">
-                            <p>Отмена</p>
-                        </button>
-                        <button class="header__modal-btn-right" type="button" uk-close id="hide-balance">
-                            <p>Скрыть</p>
-                        </button>
-                    </div>
-                </div>
-            </div>
-
+        <div class="uk-flex uk-flex-around">
+            <div class="header__currency uk-card">1000.0 &#8376;</div>
+            <div class="header__currency uk-card uk-margin-left">2.13 &#36;</div>
+            <div class="header__currency uk-card uk-margin-left">0.0 &euro;</div>
+            <div class="header__currency uk-card uk-margin-left">0.0 &#8381;</div>
+            <div class="header__currency uk-card uk-margin-left">0.0 &pound;</div>
         </div>
-
-        <ul class="uk-pagination uk-flex-center uk-margin-remove-top" uk-margin>
-            <li class="uk-active"><a class="uk-link-muted" href="#">.</a></li>
-            <li class="uk-disabled"><a href="#">.</a></li>
-            <li class="uk-disabled"><a class="uk-link-muted" href="#">.</a></li>
-        </ul>
 
     </header>
     
     <main class="main uk-position-relative">
-        
+        <div class="main__row uk-flex uk-flex-between">
+            <span>Кэшбэк</span>
+            <span class="uk-text-primary">1318.28 &#8376; &gt;</span>
+        </div>
 
-        <div class="main__background uk-container uk-position-relative">
-            <span class="uk-text-small uk-text-muted uk-text-uppercase uk-position-absolute uk-position-small uk-position-bottom-left">
-                частые платежи и переводы
+        <div class="main__row--gray">
+            <span class="uk-text-left uk-text-bottom uk-text-uppercase">опции</span>
+        </div>
+
+        <div class="main__row uk-flex uk-flex-between">
+            <span>Конвертация валют</span>
+            <span class="uk-text-muted">&gt;</span>
+        </div>
+
+        <hr class="main__hr">
+
+        <div class="main__row uk-flex uk-flex-between">
+            <div>
+                <span>Пополнить карту</span><br>
+                <span class="uk-text-muted">Картой другого банка</span>
+            </div>
+            <span class="main__sign--margin uk-text-muted">&gt;</span>
+        </div>
+
+        <hr class="main__hr">
+
+        <div class="main__row uk-flex uk-flex-between">
+            <span>Выписка</span>
+            <span class="uk-text-muted">&gt;</span>
+        </div>
+
+        <div class="main__row--gray">
+            <span class="uk-text-left uk-text-bottom uk-text-uppercase">настройки карты</span>
+        </div>
+
+        <div class="main__row uk-flex uk-flex-between">
+            <div>
+                <span>Лимиты и ограничения</span><br>
+                <span class="uk-text-muted">
+                    Интернет транзакции, POS-терминалы...
+                </span>
+            </div>
+            <span class="main__sign--margin uk-text-muted">&gt;</span>
+        </div>
+
+        <div class="main__row--gray">
+            <span> </span>
+        </div>
+
+        <div class="main__row uk-flex uk-flex-between">
+            <div>
+                <span>О карте</span><br>
+                <span class="uk-text-muted">
+                    Информация и реквизиты
+                </span>
+            </div>
+            <span class="main__sign--margin uk-text-muted">&gt;</span>
+        </div>
+
+        <hr class="main__hr">
+
+        <div class="main__row uk-flex uk-flex-between">
+            <span class="uk-text-danger">Заблокировать карту</span>
+            <div class="main__onoffswitch">
+                <input type="checkbox" name="onoffswitch" class="main__onoffswitch-checkbox" id="myonoffswitch">
+                <label class="main__onoffswitch-label" for="myonoffswitch">
+                    <span class="main__onoffswitch-inner"></span>
+                    <span class="main__onoffswitch-switch"></span>
+                </label>
+            </div>
+        </div>
+
+        <div class="main__row--gray">
+            <span>
+                <br><br>
             </span>
         </div>
-
-        <div class="main__grid uk-grid-small uk-child-width-expand@s uk-text-center uk-position-absolute
-            uk-width-1-1 uk-margin-auto" uk-grid>
-            <div class="uk-width-1-5 uk-padding-remove uk-margin-auto uk-position-relative">
-                <span class="uk-text-small uk-text-uppercase uk-text-center">переводы</span>
-                <div class="main__container--round uk-card uk-card-default uk-card-body uk-margin-auto">
-                    <div class="uk-container uk-background-default"></div>
-                </div>
-                <a class="main__grid-img uk-position-absolute" href="#" uk-icon="icon: forward"></a>
-            </div>
-            <div class="uk-width-1-5 uk-padding-remove uk-margin-auto uk-position-relative">
-                <span class="uk-text-small uk-text-uppercase uk-text-center">платежи</span>
-                <div class="main__container--round uk-card uk-card-default uk-card-body uk-margin-auto">
-                    <div class="uk-container uk-background-default"></div>
-                </div>
-                <a class="main__grid-img uk-position-absolute" href="#" uk-icon="icon: calendar"></a>
-            </div>
-            <div class="uk-width-1-5 uk-padding-remove uk-margin-auto uk-position-relative">
-                <span class="uk-text-small uk-text-uppercase uk-text-center">о карте</span>
-                <div class="main__container--round uk-card uk-card-default uk-card-body uk-margin-auto">
-                    <div class="uk-container uk-background-default"></div>
-                </div>
-                <a class="main__grid-img uk-position-absolute" href="#" uk-icon="icon: credit-card"></a>
-            </div>
-        </div>
-
-        <div class="main__cardsFunctions uk-flex uk-flex-column uk-width-1-1">
-            <div class="main__cardFunction uk-card uk-card-body">
-                <div class="uk-flex">
-                    <img class="uk-card" src="./src/img/credit-card.svg" width="45" height="auto" alt="credit-card image" uk-img>
-                    <div class="main__cardFunction-border uk-card uk-margin-medium-left uk-width-1-1">
-                        <span class="uk-text-small uk-text-bold uk-text-left">
-                            Снятие с депозита
-                        </span><br>
-                        <span class="uk-text-small uk-text-muted uk-text-bold uk-text-left">
-                            Black Edition **5051
-                        </span>
-                    </div>
-                </div>
-            </div>
-            <div class="main__cardFunction uk-card uk-card-body">
-                <div class="uk-flex">
-                    <img class="uk-card" src="./src/img/credit-card.svg" width="45" height="auto" alt="credit-card image" uk-img>
-                    <div class="main__cardFunction-border uk-card uk-margin-medium-left uk-width-1-1">
-                        <span class="uk-text-small uk-text-bold uk-text-left">
-                            Конвертация
-                        </span><br>
-                        <span class="uk-text-small uk-text-muted uk-text-bold uk-text-left uk-text-uppercase">
-                            kzt &rarr; usd
-                        </span>
-                    </div>
-                </div>
-            </div>
-            <div class="main__cardFunction uk-card uk-card-body">
-                <div class="uk-flex">
-                    <img class="uk-card" src="./src/img/credit-card-2.svg" width="45" height="auto" alt="credit-card image" uk-img>
-                    <div class="main__cardFunction-border uk-card uk-margin-medium-left uk-width-1-1">
-                        <span class="uk-text-small uk-text-bold uk-text-left">
-                            Пополнение депозита
-                        </span><br>
-                        <span class="uk-text-small uk-text-muted uk-text-bold uk-text-left uk-text-uppercase">
-                            kz34826a1kztd6a01b1u
-                        </span>
-                    </div>
-                </div>
-            </div>
-            <div class="main__cardFunction uk-card uk-card-body">
-                <div class="uk-flex">
-                    <img class="uk-card" src="./src/img/credit-card.svg" width="45" height="auto" alt="credit-card image" uk-img>
-                    <div class="main__cardFunction-border uk-card uk-margin-medium-left uk-width-1-1">
-                        <span class="uk-text-small uk-text-bold uk-text-left">
-                            Со счета на карту
-                        </span><br>
-                        <span class="uk-text-small uk-text-muted uk-text-bold uk-text-left uk-text-uppercase">
-                            Black Edition **5051
-                        </span>
-                    </div>
-                </div>
-            </div>
-            <div class="main__cardFunction uk-card uk-card-body">
-                <div class="uk-flex">
-                    <img class="uk-card" src="./src/img/credit-card-2.svg" width="45" height="auto" alt="credit-card image" uk-img>
-                    <div class="uk-card uk-margin-medium-left uk-width-1-1">
-                        <span class="uk-text-small uk-text-bold uk-text-left">
-                            Пополнение депозита
-                        </span><br>
-                        <span class="uk-text-small uk-text-muted uk-text-bold uk-text-left uk-text-uppercase">
-                            kz34826a1kztd6a01b1u
-                        </span>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <ul class="main__nav uk-iconnav uk-padding-small uk-margin-remove" style="z-index: 980;" uk-sticky="bottom: true">
-            <li class="uk-margin-auto uk-padding-remove">
-                <img class="uk-margin-auto uk-display-block" src="./src/img/pocket.svg" width="35" height="auto" alt="img" uk-img>
-                <span class="uk-text-small uk-text-center">
-                    Мой банк
-                </span>
-            </li>
-            <li class="uk-margin-auto uk-padding-remove">
-                <img class="uk-margin-auto uk-display-block" src="./src/img/products.svg" width="35" height="auto" alt="img" uk-img>
-                <span class="uk-text-small uk-text-center">
-                    Продукты
-                </span>
-            </li>
-            <li class="uk-margin-auto uk-padding-remove">
-                <img class="uk-margin-auto uk-display-block" src="./src/img/message.svg" width="35" height="auto" alt="img" uk-img>
-                <span class="uk-text-small uk-text-center">
-                    Сообщения
-                </span>
-            </li>
-            <li class="uk-margin-auto uk-padding-remove">
-                <img class="uk-margin-auto uk-display-block" src="./src/img/history.svg" width="35" height="auto" alt="img" uk-img>
-                <span class="uk-text-small uk-text-center">
-                    История
-                </span>
-            </li>
-            <li class="uk-margin-auto uk-padding-remove">
-                <img class="uk-margin-auto uk-display-block" src="./src/img/more.svg" width="35" height="auto" alt="img" uk-img>
-                <span class="uk-text-small uk-text-center uk-margin-auto uk-display-block">
-                    Ещё
-                </span>
-            </li>
-        </ul>
     </main>
     
     <script src="dist/js/app.js"></script>

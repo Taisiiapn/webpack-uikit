@@ -8,136 +8,133 @@ body {
 }
 
 .header {
-  height: 360px;
+  padding: 40px 20px;
+  height: 240px;
   background: linear-gradient(140deg, rgba(47,55,68,1) 0%, rgba(62,41,60,1) 50%);
+  color: #fff;
 
-  &__qrCode {
-    display: block;
-    margin-left: 88%;
-    width: 30px;
-    height: 30px;
-  }
-
-  &__qrCode img {
-    max-width: 100%;
-    margin: 20px 0;
+  & > span {
+    color: #fff;
   }
 
   &__title {
-    color: #fff;
-    margin: 10px;
+    margin-left: 35%;
   }
 
-  &__card-subTitle {
-    color: rgb(54, 54, 54);
+  &__subtitle {
+    margin: 70px 0 0;
   }
 
-  &__card {
-    background-color: #141e28;
-    width: 75%;
-    height: 170px;
-    border-radius: 18px;
-    margin: 0 auto;
-    padding: 20px;
-    box-sizing: border-box;
+  &__balance {
+    font-size: 40px;
+    margin-top: 0;
   }
 
-  &__card-title {
-    color: #fff;
+  &__currency {
+    border: 1px solid rgb(136, 136, 136);
+    border-radius: 30px;
+    padding: 8px 20px;
   }
-
-  &__card-add {
-    display: inline;
-    vertical-align: baseline;
-  }
-
-  &__card-balance--visible {
-    color: #fff;
-  }
-
-  &__card-balance--invisible {
-    display: none;
-  }
-
-  &__grid-img {
-    top: 10px;
-  }
-
-  &__modal {
-    border-radius: 20px;
-  }
-
-  &__modal p {
-    margin: 20px 35px;
-  }
-
-  &__modal-img {
-    display: block;
-    margin: 35px auto;
-  }
-
-  &__modal-btns {
-    border-top: 1px solid rgb(197, 193, 193);
-    width: 100%;
-    color: rgb(59, 59, 248);
-    padding: 18px;
-  }
-
-  &__modal-btn-left {
-    display: inline-flex;
-    width: 49.3%;
-    border-right: 1px solid rgb(197, 193, 193);
-  }
-
-  &__modal-btn-right {
-    display: inline-flex;
-    width: 49.3%;
-  }
-
-  &__modal-btn-left > p,
-  &__modal-btn-right > p {
-    margin: 35px auto;
-  }
-
-  &__modal-btn-left > svg,
-  &__modal-btn-right > svg {
-    display: none;
-  }
-
 }
 
 .main {
+
+  &__row {
+    padding: 15px 30px;
+    color: #000;
+  }
+
+  &__row--gray {
+    padding: 30px 30px 0;
+    background-color: rgb(236, 236, 236);
+  }
+
+  &__sign--margin {
+    margin: auto 0;
+  }
+
+  &__hr {
+    width: 96%;
+    margin: 0 0 0 auto;
+  }
+
+  &__onoffswitch {
+    position: relative;
+    width: 54px;
+    -webkit-user-select:none;
+    -moz-user-select:none;
+    -ms-user-select: none;
+  }
   
-  &__background {
-    background-color: #eef1f7;
-    height: 70px;
+  &__onoffswitch-checkbox {
+    display: none;
   }
-
-  &__container--round {
-    border-radius: 100%;
-    width: 20px;
+  
+  &__onoffswitch-label {
+    display: block;
+    overflow: hidden;
+    cursor: pointer;
+    border: 2px solid #DEDEDE;
+    border-radius: 20px;
   }
-
-  &__grid {
-    top: -55px;
+  
+  &__onoffswitch-inner {
+    display: block;
+    width: 200%;
+    margin-left: -100%;
+    transition: margin 0.3s ease-in 0s;
   }
-
-  &__grid-img {
-    top: 51%;
-    left: 38%;
+  
+  &__onoffswitch-inner:before,
+  &__onoffswitch-inner:after {
+    display: block;
+    float: left;
+    width: 50%;
+    height: 30px;
+    padding: 0;
+    line-height: 30px;
+    font-size: 10px;
+    color: white;
+    font-family: Trebuchet, Arial, sans-serif;
+    font-weight: bold;
+    box-sizing: border-box;
   }
-
-  &__cardFunction {
-    padding: 5px 30px;
+  
+  &__onoffswitch-inner:before {
+    content: "";
+    padding-left: 5px;
+    background-color: #E8E8E8;
+    color: #FFFFFF;
   }
-
-  &__cardFunction-border {
-    border-bottom: 2px solid rgb(201, 196, 196);
-    padding-bottom: 10px;
+  
+  &__onoffswitch-inner:after {
+    content: "";
+    padding-right: 5px;
+    background-color: #E8E8E8;
+    color: #FFFFFF;
+    text-align: right;
   }
-
-  &__nav {
-    border-top: 2px solid rgb(201, 196, 196);
+  
+  &__onoffswitch-switch {
+    display: block;
+    width: 30px; 
+    margin: 0px;
+    background: #FFFFFF;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 20px;
+    border: 2px solid #DEDEDE;
+    border-radius: 20px;
+    transition: all 0.3s ease-in 0s; 
   }
-
+  
+  &__onoffswitch-checkbox:checked + &__onoffswitch-label &__onoffswitch-inner {
+    margin-left: 0;
+  }
+  
+  &__onoffswitch-checkbox:checked + &__onoffswitch-label &__onoffswitch-switch {
+    right: 0px; 
+    background-color: #FFFFFF; 
+  }
 }
